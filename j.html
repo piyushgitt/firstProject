@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="thapa"> ullu</p>
+    <p class="welcome"> Technical</p>
+    <script >
+        alert("ARRY piyushwa");
+        console.log("aap ache     h");
+        var friends=[2,3,4];
+        document.write(friends)
+        document.write('<br>')
+        var FRIENDS=["piyu","priyank","ashu"];
+        FRIENDS.sort();
+        document.write(FRIENDS);
+        document.write('<br>')
+        var name=prompt("what is ur \'name\'?" )
+        
+        if(name!=""){
+            document.write("NICE To meet you " + name)
+        }
+        document.write('<br>')
+        function myfun(){
+        var userconfirmation=confirm("Do u want to visit website")
+        if(userconfirmation==true){
+            window.open("https://www.facebook.com/");
+            return true;
+        }
+        else{
+            document.write("User doesnt want to visit")
+            return false;
+        }
+    }
+    document.write('<br>')
+    var x=5;
+    var y=23;
+    var z=x+y;
+    document.write(z)
+    document.write('<br>')
+    var piyusH="youtuber";
+    var priyank=new String("youtuber");
+    document.write(piyusH==priyank)
+    document.write(typeof(piyusH))
+    var arr=[1,2];
+    var arrr= new Array(1,2);
+    
+    document.write("&nbsp; &nbsp;"+typeof(arrr))
+    var a=document.getElementById("thapa").innerHTML
+    document.write(a)
+    document.write('<br>')
+    document.write('<br>')
+    var t=document.getElementsByTagName("p").innerHTML;
+    document.write(t)
+    </script>
+    <input type="button"  onclick="myfun()" value="open my fb id">
+
+</body>
+</html>
